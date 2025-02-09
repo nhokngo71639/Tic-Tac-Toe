@@ -1,11 +1,9 @@
-import React from "react";
-
 interface BlockProps {
   value: string | null;
   onClick?: () => void;
 }
 
-const Block: React.FC = (props) => {
+const Block = (props: BlockProps) => {
   return (
     <div onClick={props.onClick} className="block">
       {props.value}

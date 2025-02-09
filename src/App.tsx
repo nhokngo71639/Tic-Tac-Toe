@@ -5,7 +5,7 @@ import Block from "./components/Block";
 function App() {
   const [state, setState] = useState(Array(9).fill(null));
   const [currentTurn, setCurrentTurn] = useState("X");
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState<string[]>([]);
   const checkWinner = (state: any[]) => {
     const win = [
       [0, 1, 2],
